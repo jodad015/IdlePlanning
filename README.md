@@ -7,8 +7,10 @@ Collaborative planning repo for an idle game. Two planners (Kodad and Zach) use 
 ### The Workflow
 
 1. **Diverge** -- Write freely in your personal space (`players/kodad/` or `players/zach/`). Don't worry about format, overlap, or polish. Brain dump mechanics, reference games, sketches, half-baked ideas.
-2. **Synthesize** -- When you're ready to converge, ask Claude Code to read both scratch spaces and pull out overlaps, tensions, and surprises. Synthesized output goes into `design/`.
-3. **Decide** -- When a synthesis leads to a concrete decision, record it in `decisions/` so you don't relitigate it later.
+2. **Propose** -- When you have an idea you want the other person's take on, write a proposal in `proposals/`. For smaller things, drop a question in `questions/`.
+3. **Discuss** -- Respond to each other's proposals and questions async. Claude can help challenge, refine, and poke holes.
+4. **Synthesize** -- When you're ready to converge, ask Claude Code to read both scratch spaces and pull out overlaps, tensions, and surprises. Synthesized output goes into `design/`.
+5. **Decide** -- When a proposal is accepted or a synthesis leads to a concrete decision, record it in `decisions/` so you don't relitigate it later.
 
 ### Directory Structure
 
@@ -16,6 +18,8 @@ Collaborative planning repo for an idle game. Two planners (Kodad and Zach) use 
 players/
   kodad/       # Kodad's scratch space -- raw ideas, notes, references
   zach/        # Zach's scratch space -- raw ideas, notes, references
+proposals/     # Async proposals between planners (lightweight RFCs)
+questions/     # Quick async questions for the other planner
 design/        # Synthesized design docs (core loop, progression, theme, etc.)
 technical/     # Architecture, stack, platform, and implementation planning
 decisions/     # Numbered decision records with rationale

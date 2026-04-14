@@ -12,6 +12,8 @@ Two planners work here: **Kodad** and **Zach**. They each maintain independent s
 
 - `players/kodad/` -- Kodad's personal scratch space (raw ideas, notes, references)
 - `players/zach/` -- Zach's personal scratch space (raw ideas, notes, references)
+- `proposals/` -- Async proposals between planners (lightweight RFCs with discussion threads)
+- `questions/` -- Quick async questions between planners (lighter than proposals)
 - `design/` -- Synthesized design documents (shared, agreed-upon direction)
 - `technical/` -- Architecture, stack, platform, and implementation planning
 - `decisions/` -- Numbered decision records capturing what was decided and why (design and technical)
@@ -39,9 +41,17 @@ Design docs go in `design/`. One topic per file. Use clear markdown. Include:
 - How it connects to other systems
 - Open questions that still need resolution
 
+### Creating Proposals
+
+When a planner wants to pitch an idea for the other to weigh in on, create a proposal in `proposals/` with the next available number. Proposals have a lifecycle: Open → Discussing → Accepted/Rejected/Revised/Parked. When a proposal is accepted, create a corresponding decision record in `decisions/`. See `proposals/README.md` for the full template and lifecycle.
+
+### Creating Questions
+
+For lighter-weight async questions (not full proposals), use `questions/`. These are quick "what do you think about X?" items. If a question grows into a bigger conversation, spin it into a proposal. See `questions/README.md` for the template.
+
 ### Creating Decision Records
 
-When the planners agree on a direction, create a decision record in `decisions/` with the next available number:
+When the planners agree on a direction (often via an accepted proposal), create a decision record in `decisions/` with the next available number:
 
 ```
 decisions/001-topic-name.md
