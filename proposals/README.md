@@ -1,15 +1,19 @@
 # Proposals
 
-Proposals are how Kodad and Zach pitch ideas to each other asynchronously. Think of them as lightweight RFCs — structured enough to be actionable, casual enough to not slow you down.
+Proposals are how Kodad, Zach, and Ethan pitch ideas to each other asynchronously. Think of them as lightweight RFCs — structured enough to be actionable, casual enough to not slow you down.
 
 ## Lifecycle
 
-1. **Open** — Someone writes a proposal. The other person hasn't weighed in yet.
-2. **Discussing** — Both people (or Claude) have added responses. Still working it out.
-3. **Accepted** — Both agree. The proposal graduates into a decision record in `decisions/`.
+1. **Open** — Someone writes a proposal. The other planners haven't weighed in yet.
+2. **Discussing** — At least one other planner (or Claude) has added a response. Still working it out.
+3. **Accepted** — All three planners agree (unless the proposer explicitly scopes it smaller). The proposal graduates into a decision record in `decisions/`.
 4. **Revised** — The core idea changed significantly based on discussion. The proposal is updated and status resets to Discussing.
 5. **Rejected** — Decided against. Keep the file so you remember why.
 6. **Parked** — Good idea, wrong time. Revisit later.
+
+## Scope of Agreement
+
+By default, proposals need input from all three planners before they move to Accepted. If a proposal only affects part of the game that two planners own (e.g., a technical choice that Kodad and Ethan need to align on but Zach is happy to defer on), the proposer can note that up front in the proposal -- "Scope: Kodad + Ethan" -- and the third planner's silence is treated as deference rather than blocking.
 
 ## File Format
 

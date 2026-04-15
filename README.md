@@ -1,15 +1,15 @@
 # IdlePlanning
 
-Collaborative planning repo for an idle game. Two planners (Kodad and Zach) use this space for divergent thinking, then converge with the help of Claude Code agents.
+Collaborative planning repo for an idle game. Three planners (Kodad, Zach, and Ethan) use this space for divergent thinking, then converge with the help of Claude Code agents.
 
 ## How This Repo Works
 
 ### The Workflow
 
-1. **Diverge** -- Write freely in your personal space (`players/kodad/` or `players/zach/`). Don't worry about format, overlap, or polish. Brain dump mechanics, reference games, sketches, half-baked ideas.
-2. **Propose** -- When you have an idea you want the other person's take on, write a proposal in `proposals/`. For smaller things, drop a question in `questions/`.
-3. **Discuss** -- Respond to each other's proposals and questions async. Claude can help challenge, refine, and poke holes.
-4. **Synthesize** -- When you're ready to converge, ask Claude Code to read both scratch spaces and pull out overlaps, tensions, and surprises. Synthesized output goes into `design/`.
+1. **Diverge** -- Write freely in your personal space (`players/kodad/`, `players/zach/`, or `players/ethan/`). Don't worry about format, overlap, or polish. Brain dump mechanics, reference games, sketches, half-baked ideas.
+2. **Propose** -- When you have an idea you want the others' take on, write a proposal in `proposals/`. For smaller things, drop a question in `questions/`.
+3. **Discuss** -- Respond to each other's proposals and questions async. Claude can help challenge, refine, and poke holes. Proposals typically need input from all three planners before they graduate to a decision.
+4. **Synthesize** -- When you're ready to converge, ask Claude Code to read all three scratch spaces and pull out overlaps, tensions, and surprises. Synthesized output goes into `design/`.
 5. **Decide** -- When a proposal is accepted or a synthesis leads to a concrete decision, record it in `decisions/` so you don't relitigate it later.
 
 ### Directory Structure
@@ -18,8 +18,9 @@ Collaborative planning repo for an idle game. Two planners (Kodad and Zach) use 
 players/
   kodad/       # Kodad's scratch space -- raw ideas, notes, references
   zach/        # Zach's scratch space -- raw ideas, notes, references
+  ethan/       # Ethan's scratch space -- raw ideas, notes, references
 proposals/     # Async proposals between planners (lightweight RFCs)
-questions/     # Quick async questions for the other planner
+questions/     # Quick async questions for the other planners
 design/        # Synthesized design docs (core loop, progression, theme, etc.)
 technical/     # Architecture, stack, platform, and implementation planning
 decisions/     # Numbered decision records with rationale
@@ -31,8 +32,8 @@ decisions/     # Numbered decision records with rationale
 Just open the repo and start talking. Claude Code has instructions (in CLAUDE.md) for how to operate in this planning context.
 
 **Useful things to ask Claude Code:**
-- "Read through both player scratch spaces and find common themes"
-- "What tensions exist between Kodad's and Zach's ideas?"
+- "Read through all the player scratch spaces and find common themes"
+- "What tensions exist between Kodad's, Zach's, and Ethan's ideas?"
 - "Synthesize our thoughts on [topic] into a design doc"
 - "What open questions should we resolve next?"
 - "Poke holes in this mechanic: [description]"

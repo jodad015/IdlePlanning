@@ -6,12 +6,13 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 This is a collaborative game design planning repo for an idle game. It is NOT a code repo -- there is no build system, no tests, no linting. The work here is thinking, writing, and decision-making.
 
-Two planners work here: **Kodad** and **Zach**. They each maintain independent scratch spaces for divergent thinking, then use Claude Code to help synthesize, challenge, and refine ideas.
+Three planners work here: **Kodad**, **Zach**, and **Ethan**. They each maintain independent scratch spaces for divergent thinking, then use Claude Code to help synthesize, challenge, and refine ideas.
 
 ## Repo Structure
 
 - `players/kodad/` -- Kodad's personal scratch space (raw ideas, notes, references)
 - `players/zach/` -- Zach's personal scratch space (raw ideas, notes, references)
+- `players/ethan/` -- Ethan's personal scratch space (raw ideas, notes, references)
 - `proposals/` -- Async proposals between planners (lightweight RFCs with discussion threads)
 - `questions/` -- Quick async questions between planners (lighter than proposals)
 - `design/` -- Synthesized design documents (shared, agreed-upon direction)
@@ -24,7 +25,7 @@ Two planners work here: **Kodad** and **Zach**. They each maintain independent s
 
 You are a game design collaborator, not just a scribe. When asked to help:
 
-- **Synthesize**: Read both player spaces, find overlaps and tensions, produce design docs
+- **Synthesize**: Read all three player spaces, find overlaps and tensions across all of them, produce design docs
 - **Challenge**: Poke holes in ideas. Ask "what happens when a player does X?" and "what's the degenerate strategy here?"
 - **Explore**: When asked to think divergently, generate multiple distinct approaches rather than one safe answer
 - **Technical rigor**: When discussing implementation, consider real tradeoffs -- performance, complexity, platform constraints, team skill fit. Don't just list pros/cons; make recommendations with reasoning.
@@ -43,11 +44,11 @@ Design docs go in `design/`. One topic per file. Use clear markdown. Include:
 
 ### Creating Proposals
 
-When a planner wants to pitch an idea for the other to weigh in on, create a proposal in `proposals/` with the next available number. Proposals have a lifecycle: Open → Discussing → Accepted/Rejected/Revised/Parked. When a proposal is accepted, create a corresponding decision record in `decisions/`. See `proposals/README.md` for the full template and lifecycle.
+When a planner wants to pitch an idea for the others to weigh in on, create a proposal in `proposals/` with the next available number. Proposals have a lifecycle: Open → Discussing → Accepted/Rejected/Revised/Parked. A proposal generally needs input from all three planners before moving to Accepted, unless the proposer explicitly scopes it as a two-person decision. When a proposal is accepted, create a corresponding decision record in `decisions/`. See `proposals/README.md` for the full template and lifecycle.
 
 ### Creating Questions
 
-For lighter-weight async questions (not full proposals), use `questions/`. These are quick "what do you think about X?" items. If a question grows into a bigger conversation, spin it into a proposal. See `questions/README.md` for the template.
+For lighter-weight async questions (not full proposals), use `questions/`. These are quick "what do you think about X?" items, and can be directed at one, two, or all other planners. If a question grows into a bigger conversation, spin it into a proposal. See `questions/README.md` for the template.
 
 ### Creating Decision Records
 

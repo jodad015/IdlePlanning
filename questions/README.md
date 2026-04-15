@@ -1,6 +1,8 @@
 # Questions
 
-Quick async questions between Kodad and Zach. Lighter weight than a proposal — use these when you want the other person's take on something before you invest in fleshing it out.
+Quick async questions between Kodad, Zach, and Ethan. Lighter weight than a proposal — use these when you want another planner's take on something before you invest in fleshing it out.
+
+Questions can be directed at a specific planner or left open to whoever wants to weigh in. If you're asking a specific person, note it in the `Asked of` field in the question template.
 
 ## File Format
 
@@ -18,6 +20,7 @@ Quick async questions between Kodad and Zach. Lighter weight than a proposal —
 # [Number] - [Title]
 
 **Asked by**: [Name]
+**Asked of**: [Name(s) or "anyone"]
 **Date**: YYYY-MM-DD
 **Status**: Open
 
@@ -27,7 +30,7 @@ What do you want to know?
 
 ## Context
 
-Any background that helps the other person answer well.
+Any background that helps answer well.
 
 ## Responses
 

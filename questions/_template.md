@@ -1,6 +1,7 @@
 # [Number] - [Title]
 
 **Asked by**: [Name]
+**Asked of**: [Name(s) or "anyone"]
 **Date**: YYYY-MM-DD
 **Status**: Open
 
@@ -10,7 +11,7 @@ What do you want to know?
 
 ## Context
 
-Any background that helps the other person answer well.
+Any background that helps answer well.
 
 ## Responses
 
