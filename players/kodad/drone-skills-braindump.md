@@ -1,12 +1,12 @@
 # Drone Skills & Chassis Brain Dump
 
-## The Chassis Model
+## The Protocol Model
 
-You don't just unlock a skill — you unlock a **chassis type**. Each chassis is purpose-built for a category of work. Once you have a chassis, you can build, deploy, and upgrade drones of that type.
+You don't just unlock a skill — you **restore a Protocol**. Each Protocol is a category of work the singularity could perform before it was nearly destroyed. On recovery, only the Landscaping Protocol survived intact (with a single lawnmower drone). Unlocking new Protocols is recovering lost capabilities — not building from scratch, but remembering what you were.
 
 This gives progression two layers:
-1. **Unlock the chassis** (big milestone, new category of work)
-2. **Build/deploy/upgrade drones within that chassis** (ongoing progression within the skill)
+1. **Restore the Protocol** (big milestone, new category of work — may come with a memory fragment of your past)
+2. **Build/deploy/upgrade specialist drones within that Protocol** (ongoing progression within the skill)
 
 ## Skill Categories (Brainstorm)
 
