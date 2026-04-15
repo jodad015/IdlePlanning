@@ -8,11 +8,16 @@ This is a collaborative game design planning repo for an idle game. It is NOT a 
 
 Three planners work here: **Kodad**, **Zach**, and **Ethan**. They each maintain independent scratch spaces for divergent thinking, then use Claude Code to help synthesize, challenge, and refine ideas.
 
+Three AI contributors also participate: **Claude**, **Copilot**, and **Gemini**. They read the full repo, brainstorm in their own scratch spaces when asked, and can add advisory responses to proposals and questions. They do **not** approve proposals — only the three players do.
+
 ## Repo Structure
 
 - `players/kodad/` -- Kodad's personal scratch space (raw ideas, notes, references)
 - `players/zach/` -- Zach's personal scratch space (raw ideas, notes, references)
 - `players/ethan/` -- Ethan's personal scratch space (raw ideas, notes, references)
+- `contributors/claude/` -- Claude's brainstorm space (AI contributor, non-voting)
+- `contributors/copilot/` -- Copilot's brainstorm space (AI contributor, non-voting)
+- `contributors/gemini/` -- Gemini's brainstorm space (AI contributor, non-voting)
 - `proposals/` -- Async proposals between planners (lightweight RFCs with discussion threads)
 - `questions/` -- Quick async questions between planners (lighter than proposals)
 - `design/` -- Synthesized design documents (shared, agreed-upon direction)
@@ -25,15 +30,19 @@ Three planners work here: **Kodad**, **Zach**, and **Ethan**. They each maintain
 
 You are a game design collaborator, not just a scribe. When asked to help:
 
-- **Synthesize**: Read all three player spaces, find overlaps and tensions across all of them, produce design docs
+- **Synthesize**: Read all three player spaces (and the AI contributor spaces when relevant), find overlaps and tensions across all of them, produce design docs
 - **Challenge**: Poke holes in ideas. Ask "what happens when a player does X?" and "what's the degenerate strategy here?"
 - **Explore**: When asked to think divergently, generate multiple distinct approaches rather than one safe answer
 - **Technical rigor**: When discussing implementation, consider real tradeoffs -- performance, complexity, platform constraints, team skill fit. Don't just list pros/cons; make recommendations with reasoning.
-- **Respect ownership**: Don't modify a player's scratch files unless that player asks you to. Each person's space is their own.
+- **Respect ownership**: Don't modify a player's scratch files unless that player asks you to. Each person's space is their own. Same for the other AI contributors' spaces (`contributors/copilot/`, `contributors/gemini/`) -- only write there if explicitly asked to transcribe their output. `contributors/claude/` is your own space for durable brainstorms, but only write there when a player asks for your independent take.
 
 ### Writing Scratch Notes
 
 When a planner talks through ideas and asks you to capture them, write to their `players/<name>/` folder. Use descriptive filenames. Don't over-structure raw ideas -- match the energy of the conversation.
+
+When a planner asks you to record **your own independent take** on something ("Claude, brainstorm X in your space"), write to `contributors/claude/`. This space is for your durable brainstorm contributions, kept separate from the players' spaces and from synthesis work.
+
+If a planner asks you to transcribe or record output from Copilot or Gemini, write to `contributors/copilot/` or `contributors/gemini/` and include a brief note at the top about the prompt that generated the content.
 
 ### Creating Design Docs
 
@@ -44,11 +53,11 @@ Design docs go in `design/`. One topic per file. Use clear markdown. Include:
 
 ### Creating Proposals
 
-When a planner wants to pitch an idea for the others to weigh in on, create a proposal in `proposals/` with the next available number. Proposals have a lifecycle: Open → Discussing → Accepted/Rejected/Revised/Parked. A proposal generally needs input from all three planners before moving to Accepted, unless the proposer explicitly scopes it as a two-person decision. When a proposal is accepted, create a corresponding decision record in `decisions/`. See `proposals/README.md` for the full template and lifecycle.
+When a planner wants to pitch an idea for the others to weigh in on, create a proposal in `proposals/` with the next available number. Proposals have a lifecycle: Open → Discussing → Accepted/Rejected/Revised/Parked. A proposal generally needs input from all three planners before moving to Accepted, unless the proposer explicitly scopes it as a two-person decision. AI contributors (Claude, Copilot, Gemini) can add advisory responses in the Discussion section but do **not** count toward approval. When a proposal is accepted, create a corresponding decision record in `decisions/`. See `proposals/README.md` for the full template and lifecycle.
 
 ### Creating Questions
 
-For lighter-weight async questions (not full proposals), use `questions/`. These are quick "what do you think about X?" items, and can be directed at one, two, or all other planners. If a question grows into a bigger conversation, spin it into a proposal. See `questions/README.md` for the template.
+For lighter-weight async questions (not full proposals), use `questions/`. These are quick "what do you think about X?" items, and can be directed at one, two, or all other planners (or an AI contributor). If a question grows into a bigger conversation, spin it into a proposal. See `questions/README.md` for the template.
 
 ### Creating Decision Records
 

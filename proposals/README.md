@@ -15,6 +15,10 @@ Proposals are how Kodad, Zach, and Ethan pitch ideas to each other asynchronousl
 
 By default, proposals need input from all three planners before they move to Accepted. If a proposal only affects part of the game that two planners own (e.g., a technical choice that Kodad and Ethan need to align on but Zach is happy to defer on), the proposer can note that up front in the proposal -- "Scope: Kodad + Ethan" -- and the third planner's silence is treated as deference rather than blocking.
 
+## AI Contributor Input
+
+Claude, Copilot, and Gemini can add responses to proposals in the Discussion section. Their input is advisory — it surfaces perspective, challenges, and alternatives, but it does **not** count toward acceptance. Only the three planners approve. AI responses should be labeled clearly, e.g., `### Claude - 2026-04-15`.
+
 ## File Format
 
 `NNN-short-description.md` (e.g., `001-core-theme-direction.md`)

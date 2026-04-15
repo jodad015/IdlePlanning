@@ -2,7 +2,7 @@
 
 Quick async questions between Kodad, Zach, and Ethan. Lighter weight than a proposal — use these when you want another planner's take on something before you invest in fleshing it out.
 
-Questions can be directed at a specific planner or left open to whoever wants to weigh in. If you're asking a specific person, note it in the `Asked of` field in the question template.
+Questions can be directed at a specific planner or left open to whoever wants to weigh in. If you're asking a specific person, note it in the `Asked of` field in the question template. You can also direct a question at an AI contributor (Claude, Copilot, Gemini) for perspective — their responses are advisory just like on proposals.
 
 ## File Format
 

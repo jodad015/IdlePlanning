@@ -1,6 +1,6 @@
 # IdlePlanning
 
-Collaborative planning repo for an idle game. Three planners (Kodad, Zach, and Ethan) use this space for divergent thinking, then converge with the help of Claude Code agents.
+Collaborative planning repo for an idle game. Three planners (Kodad, Zach, and Ethan) use this space for divergent thinking, then converge with the help of Claude Code agents. Three AI contributors (Claude, Copilot, Gemini) also participate — reading the repo, brainstorming when asked, and adding advisory input on proposals. Only the three planners approve decisions.
 
 ## How This Repo Works
 
@@ -16,14 +16,18 @@ Collaborative planning repo for an idle game. Three planners (Kodad, Zach, and E
 
 ```
 players/
-  kodad/       # Kodad's scratch space -- raw ideas, notes, references
-  zach/        # Zach's scratch space -- raw ideas, notes, references
-  ethan/       # Ethan's scratch space -- raw ideas, notes, references
-proposals/     # Async proposals between planners (lightweight RFCs)
-questions/     # Quick async questions for the other planners
-design/        # Synthesized design docs (core loop, progression, theme, etc.)
-technical/     # Architecture, stack, platform, and implementation planning
-decisions/     # Numbered decision records with rationale
+  kodad/          # Kodad's scratch space -- raw ideas, notes, references
+  zach/           # Zach's scratch space -- raw ideas, notes, references
+  ethan/          # Ethan's scratch space -- raw ideas, notes, references
+contributors/
+  claude/         # Claude's brainstorm space (AI, non-voting)
+  copilot/        # Copilot's brainstorm space (AI, non-voting)
+  gemini/         # Gemini's brainstorm space (AI, non-voting)
+proposals/        # Async proposals between planners (lightweight RFCs)
+questions/        # Quick async questions for the other planners
+design/           # Synthesized design docs (core loop, progression, theme, etc.)
+technical/        # Architecture, stack, platform, and implementation planning
+decisions/        # Numbered decision records with rationale
 ```
 
 ### Working With Claude Code
@@ -34,6 +38,8 @@ Just open the repo and start talking. Claude Code has instructions (in CLAUDE.md
 **Useful things to ask Claude Code:**
 - "Read through all the player scratch spaces and find common themes"
 - "What tensions exist between Kodad's, Zach's, and Ethan's ideas?"
+- "Claude, brainstorm X in your scratch space" (writes to `contributors/claude/`)
+- "Paste this Gemini output into Gemini's space with a note about the prompt"
 - "Synthesize our thoughts on [topic] into a design doc"
 - "What open questions should we resolve next?"
 - "Poke holes in this mechanic: [description]"
