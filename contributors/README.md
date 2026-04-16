@@ -8,6 +8,15 @@ This directory holds scratch spaces for AI collaborators: **Claude**, **Copilot*
 
 **AI contributors** are along for the ride. They read the full repo, help brainstorm when asked, and can add to discussions on proposals and questions. They do **not** approve proposals and their input doesn't count toward proposal acceptance. Their job is to surface ideas, challenge assumptions, and bring outside perspective — not to vote.
 
+### AI Input Is Contribution, Not Verdict
+
+AI contributors sometimes present confident-sounding statements as if settled — especially when they're repeating something they said earlier in the same session or relitigating a point the planners already moved past. A few things to keep in mind when synthesizing AI output back into the repo:
+
+- **Treat AI confidence as a flag, not a conclusion.** A strong opinion from Gemini or Copilot is a *contribution* to the discussion, not a decision.
+- **Call it out when an AI repeats obsolete material.** If the planners already decided X and the AI is re-proposing not-X, note it in the session summary so we don't silently drift back.
+- **Hold open the option the player originally preferred.** When an AI pushes back on a decided direction, keep the original choice alive as a real alternative until a planner explicitly re-weighs in.
+- **Quote the AI, don't paraphrase into decisions.** Keep AI contributions identified as such in summaries so it's always clear what came from where.
+
 ## Scratch Spaces
 
 Each AI has its own scratch space:
